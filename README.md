@@ -11,12 +11,19 @@ El sitio ofrece una amplia gama de productos botánicos, desde plantas de interi
 - **HTML**: Estructura del sitio.
 - **CSS**: Estilización y diseño responsive.
 - **JavaScript**: Interactividad del sitio.
+- **Bootstrap**: Framework de CSS para diseño responsive y componentes predefinidos.
 
 ## 🌟 Características
 
 - Navegación intuitiva y diseño responsive.
 - Animaciones atractivamente minimalistas.
 - Formulario de contacto y suscripción a newsletter.
+
+## 🌐 Enlaces
+
+- **Repositorio GitHub**: [Visitar Repositorio](https://github.com/ignaciorevainera/cac-python-24264-g16)
+- **Deploy en Vercel**: [Ver Sitio en Vercel](https://cac-python-24264-g16.vercel.app/)
+- **Deploy en Netlify**: [Ver Sitio en Netlify](https://cac-python-24264-g16.netlify.app/)
 
 ## 🤝 Contribuyentes
 
