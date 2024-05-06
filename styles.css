@@ -43,6 +43,7 @@
 
 	/* Medidas */
 	--border-radius: 0.25rem;
+	--transition-duration: 0.5s;
 }
 
 html {
@@ -63,4 +64,14 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-grow: 1;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	color: var(--primary);
+	transition: color var(--transition-duration);
+}
+
+.navbar-brand:hover {
+	color: var(--primary-dark);
 }
