@@ -42,7 +42,8 @@
 	--danger-dark: #9a2530;
 
 	/* Medidas */
-	--border-radius: 0.25rem;
+	--border-width: 1px;
+	--border-radius: 1rem;
 	--transition-duration: 0.5s;
 }
 
@@ -61,9 +62,8 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	flex-grow: 1;
+	padding: 1rem;
 }
 
 .navbar-brand {
@@ -74,4 +74,49 @@ main {
 
 .navbar-brand:hover {
 	color: var(--primary-dark);
+}
+
+.g-card-container {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+	grid-auto-rows: auto;
+}
+
+.g-card {
+	background-color: var(--background);
+	border-radius: var(--border-radius);
+	border: var(--border-width) solid var(--default);
+}
+
+.g-card-img {
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+	width: 100%;
+	height: 10rem;
+}
+
+.g-card-body {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.g-card-title {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0;
+}
+
+.g-card-category {
+	font-size: 0.8rem;
+	color: var(--secondary);
+}
+
+.g-card-price {
+	font-weight: bold;
+	color: var(--primary);
 }
