@@ -8,7 +8,7 @@
 
 :root {
 	/* Colores */
-	--text-dark: rgb(33, 37, 41);
+	--text-dark: #212529;
 	--text-light: #f5f5f5;
 
 	--background: #f8f9fa;
@@ -78,6 +78,8 @@ main {
 	color: var(--primary-dark);
 }
 
+/* ofertas */
+
 .g-card-container {
 	display: grid;
 	gap: 1rem;
@@ -123,7 +125,9 @@ main {
 	color: var(--primary);
 }
 
-footer{
+/* footer */
+
+footer {
 	background-color: var(--background);
 	color: var(--text-dark);
 	display: flex;
@@ -134,56 +138,58 @@ footer{
 */
 }
 
-footer div{
+footer div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 1%;	
-	flex:1;
+	margin-top: 1%;
+	flex: 1;
 }
 
-.redes{ /*bad practice*/
+.redes {
+	/*bad practice*/
 	margin: 0;
 }
 
-.redes i{
+.redes i {
 	font-size: 1.5em;
-	color: #53b86a;
+	color: var(--primary);
 	transition: var(--transition-duration) all;
 }
 
-.redes i:hover{
-	color: #48a058;
+.redes i:hover {
+	color: var(--primary-dark);
 }
 
-.newsletter-container{
-	margin: 1% 0 ;
+/* newsletter */
+
+.newsletter-container {
+	margin: 1% 0;
 	padding: 0.5%;
 	position: absolute;
 	bottom: 0;
-	left:0;
-	right:0;
+	left: 0;
+	right: 0;
 
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 
-
 	background-color: var(--primary);
-	color:var(--text-light) ;
+	color: var(--text-light);
 
 	font-weight: 100;
 }
 
-.newsletter-container div{
+.newsletter-container div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.submit_button input{
+.submit_button input {
 	border: none;
-	padding: 2% 50% ;
+	padding: 2% 50%;
 	border-radius: 2px;
 
 	background-color: var(--background);
