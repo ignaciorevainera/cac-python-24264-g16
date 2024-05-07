@@ -64,7 +64,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding: 1rem;
 
 	position: relative;
 }
@@ -100,6 +99,11 @@ main {
 
 .navbar-brand:hover {
 	color: var(--primary-dark);
+}
+
+/* sections */
+main section {
+	margin: 1rem 0;
 }
 
 /* footer */
