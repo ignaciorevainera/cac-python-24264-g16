@@ -9,9 +9,10 @@
 :root {
 	/* Colores */
 	--text-dark: #212529;
-	--text-light: #f5f5f5;
+	--text-light: #f8f9fa;
 
 	--background: #f8f9fa;
+	--background-dark: #212529;
 
 	--default: #d5d5d5;
 	--default-light: #e5e5e5;

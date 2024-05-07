@@ -6,9 +6,9 @@
 /* ofertas */
 
 .section-sales {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 	padding: 0 1rem;
 }
 
@@ -56,6 +56,29 @@
 	font-weight: bold;
 	color: var(--primary);
 	margin-bottom: 1.5rem;
+}
+
+/* categories */
+.section-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 0 1rem;
+}
+
+.section-categories .g-card {
+	background-color: var(--background-dark);
+}
+
+.g-category-img {
+	width: 100%;
+	height: auto;
+	border-radius: var(--border-radius);
+	transition: opacity var(--transition-duration);
+}
+
+.g-category-img:hover {
+	opacity: 0.7;
 }
 
 /* newsletter */
