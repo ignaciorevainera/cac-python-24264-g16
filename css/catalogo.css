@@ -1,0 +1,121 @@
+/* sección de búsqueda y filtros */
+
+.section-filters {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1rem;
+}
+
+input[type="search"] {
+	padding: 0.2rem 0.5rem;
+	border: 1px solid var(--secondary);
+	outline: none;
+	border-radius: var(--border-radius);
+	width: 100%;
+}
+
+input[type="search"]:focus {
+	border-color: var(--primary);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	height: 1em;
+	width: 1em;
+	border-radius: 100%;
+	background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+		no-repeat 50% 50%;
+	background-size: contain;
+	opacity: 0;
+	pointer-events: none;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+	opacity: 0.3;
+	pointer-events: all;
+}
+
+.section-filters-selectors {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+select {
+	user-select: none;
+	padding: 0.2rem 0.5rem;
+	border: 1px solid var(--secondary);
+	outline: none;
+	border-radius: var(--border-radius);
+}
+
+.section-filters-selectors label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	user-select: none;
+}
+
+.checkbox-wrapper-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.checkbox-wrapper-2 .ikxBAC {
+	appearance: none;
+	background-color: var(--secondary);
+	border-radius: 72px;
+	border-style: none;
+	flex-shrink: 0;
+	height: 20px;
+	margin: 0;
+	position: relative;
+	width: 30px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+	transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+	background-color: var(--text-light);
+	border-radius: 50%;
+	content: "";
+	height: 14px;
+	left: 3px;
+	position: absolute;
+	top: 3px;
+	width: 14px;
+}
+
+.checkbox-wrapper-2 input[type="checkbox"] {
+	cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+	background-color: var(--secondary-dark);
+	transition-duration: var(--transition-duration);
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+	background-color: var(--primary);
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+	background-color: var(--text-light);
+	left: 14px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+	outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+	background-color: var(--primary-dark);
+}
