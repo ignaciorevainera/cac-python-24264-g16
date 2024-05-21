@@ -87,16 +87,16 @@
 
 			<section class="section-contact">
 				<div class="form-container" id="form">
-					<form action="contacto" method="get">
+					<form action method="GET" target="_self">
 						<p>
 							<label for="Name">Nombre</label>
 							<br>
-							<input type="text" id="Name" name="name">
+							<input type="text" id="Name" name="name" required>
 						</p>
 						<p>
 							<label for="Mail">Mail</label>
 							<br>
-							<input type="text" id="Mail" name="Mail">
+							<input type="text" id="Mail" name="Mail" required>
 						</p>
 						<p>
 							<label for="phone">Teléfono (Opcional)</label>
@@ -127,8 +127,8 @@
 							<br>
 							<textarea id="Message" name="Message" cols="40" rows="10"></textarea>
 						</p>
-						<button class="button" id="submit">
-							<input type="submit" name="Enviar" id="submit">
+						<button class="button">
+							<input type="submit" name id="Enviar">
 						</button>
 					</form>
 
@@ -147,7 +147,7 @@
 					<div class="help_data">
 						<article>
 							<h5>Post Venta</h5>
-							<p>Estamos para ayudarte a resolver cualquier inconveniente  <br>
+							<p>Estamos para ayudarte a resolver cualquier inquietud  <br>
 								 que puedas tener con tus plantas</p>
 							<a href="">contacto@viverogreen.com.ar</a>
 						</article>
