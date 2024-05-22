@@ -37,6 +37,7 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/catalogo.css" />
 		<title>Catálogo</title>
 	</head>
 	<body>
@@ -77,7 +78,37 @@
 			</nav>
 		</header>
 
-		<main>Proximamente...</main>
+		<main>
+			<section class="section-filters">
+				<input type="search" placeholder="Buscar" />
+				<section class="section-filters-selectors">
+					<select name="orderBy" id="orderBy">
+						<option value="1">Ordenar por</option>
+						<option value="2">Menor precio</option>
+						<option value="3">Mayor precio</option>
+						<option value="4">Nombre A-Z</option>
+						<option value="5">Nombre Z-A</option>
+					</select>
+					<select name="category" id="category">
+						<option value="1">Categoría</option>
+						<option value="2">Plantas</option>
+						<option value="3">Macetas</option>
+						<option value="4">Herramientas</option>
+						<option value="5">Fertilizantes</option>
+					</select>
+					<label for="freeShipping"
+						>Envío gratis
+						<div class="checkbox-wrapper-2">
+							<input
+								id="freeShipping"
+								type="checkbox"
+								class="sc-gJwTLC ikxBAC"
+							/>
+						</div>
+					</label>
+				</section>
+			</section>
+		</main>
 
 		<footer>
 			<div class="copyright">
