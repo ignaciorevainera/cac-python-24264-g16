@@ -4,6 +4,39 @@ main {
 	gap: 1rem;
 }
 
+.section-title {
+	font-size: 1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+/* hero */
+
+.section-hero {
+	width: 100%;
+	height: 60vh;
+	background-image: url("https://picsum.photos/id/75/300/300");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+.content-hero h1 {
+	font-size: 4rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.content-hero p {
+	font-size: 1.5rem;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 /* promociones */
 
 .section-promotions {
@@ -27,10 +60,10 @@ main {
 	align-items: center;
 	padding: 1rem;
 	gap: 0.5rem;
+	width: 100%;
 }
 
-.card-promotion h2 {
-	font-size: 1rem;
+.card-promotion h3 {
 	text-align: center;
 	text-wrap: balance;
 	text-transform: uppercase;
@@ -45,15 +78,18 @@ main {
 	margin: 0;
 }
 
-/* ofertas */
+@media (width >= 640px) {
+	.section-promotions {
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
 
-.section-sales h1 {
-	font-size: 1.5rem;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-bottom: 1.5rem;
+	.card-promotion {
+		min-height: 16rem;
+	}
 }
+
+/* ofertas */
 
 .section-sales .g-card .g-card-body .g-card-last-price {
 	font-size: 0.8rem;
@@ -106,6 +142,13 @@ select {
 	border: 1px solid var(--secondary);
 	outline: none;
 	border-radius: var(--border-radius);
+}
+
+.section-filters-selectors {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
 }
 
 .section-filters label {
@@ -176,12 +219,34 @@ select {
 	background-color: var(--primary-dark);
 }
 
+@media (width >= 440px) {
+	.section-filters-selectors {
+		flex-direction: row;
+	}
+
+	.section-filters-selectors select {
+		flex-grow: 1;
+	}
+}
+
+@media (width >= 1024px) {
+	.section-filters {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.section-filters label {
+		flex-grow: 1;
+		width: 100%;
+	}
+}
+
 /* catálogo y productos */
 
 .g-card-container {
 	display: grid;
 	gap: 1rem;
-	grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
 	grid-auto-rows: auto;
 	padding: 0 1rem;
 	margin: 0;
