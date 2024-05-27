@@ -118,52 +118,47 @@
 
 			<section class="section-sales">
 				<h2 class="section-title">Nuestras ofertas</h2>
-				<div class="cards-container">
-					<article class="product-card">
-						<img
-							src="https://picsum.photos/id/75/300/300"
-							class="product-card-img"
-							alt="..."
-						/>
-						<div class="product-card-body">
-							<h5 class="product-card-title">Producto</h5>
-							<h6 class="product-card-category">Categoría</h6>
-							<div class="product-card-details">
-								<div class="product-card-prices">
-									<span class="product-card-last-price"
-										>$99.999,99</span
-									>
-									<span class="product-card-price"
-										>$99.999,99</span
-									>
-								</div>
-								<span class="product-card-shipping-tag"
-									>Envío gratis<i class="bx bxs-package"></i
-								></span>
-							</div>
-							<a href="#" class="button">Comprar</a>
-						</div>
-					</article>
-				</div>
+				<div class="cards-container-sales"></div>
 			</section>
 
 			<section class="section-search">
 				<input type="search" placeholder="Buscar" />
 				<div class="section-search-filters">
 					<div class="section-search-filters-selectors">
+						<select name="category" id="category">
+							<option value="1">Categoría</option>
+							<option value="Plantas de Interior">
+								Plantas de Interior
+							</option>
+							<option value="Plantas de Exterior">
+								Plantas de Exterior
+							</option>
+							<option value="Macetas y Contenedores">
+								Macetas y Contenedores
+							</option>
+							<option value="Herramientas">Herramientas</option>
+							<option value=">Sustratos y Fertilizantes">
+								Sustratos y Fertilizantes
+							</option>
+							<option value="Sistemas de Riego">
+								Sistemas de Riego
+							</option>
+							<option value="Decoración de Jardín">
+								Decoración de Jardín
+							</option>
+							<option value="Libros y Guías">
+								Libros y Guías
+							</option>
+							<option value="Muebles de Jardín">
+								Muebles de Jardín
+							</option>
+						</select>
 						<select name="orderBy" id="orderBy">
 							<option value="1">Ordenar por</option>
 							<option value="2">Menor precio</option>
 							<option value="3">Mayor precio</option>
 							<option value="4">Nombre A-Z</option>
 							<option value="5">Nombre Z-A</option>
-						</select>
-						<select name="category" id="category">
-							<option value="1">Categoría</option>
-							<option value="2">Plantas</option>
-							<option value="3">Macetas</option>
-							<option value="4">Herramientas</option>
-							<option value="5">Fertilizantes</option>
 						</select>
 					</div>
 					<label for="freeShipping"
@@ -180,33 +175,7 @@
 			</section>
 
 			<section class="section-catalog">
-				<div class="cards-container">
-					<article class="product-card">
-						<img
-							src="https://picsum.photos/id/75/300/300"
-							class="product-card-img"
-							alt="..."
-						/>
-						<div class="product-card-body">
-							<h5 class="product-card-title">Producto</h5>
-							<h6 class="product-card-category">Categoría</h6>
-							<div class="product-card-details">
-								<div class="product-card-prices">
-									<span class="product-card-last-price"
-										>$99.999,99</span
-									>
-									<span class="product-card-price"
-										>$99.999,99</span
-									>
-								</div>
-								<span class="product-card-shipping-tag"
-									>Envío gratis<i class="bx bxs-package"></i
-								></span>
-							</div>
-							<a href="#" class="button">Comprar</a>
-						</div>
-					</article>
-				</div>
+				<div class="cards-container"></div>
 			</section>
 		</main>
 
@@ -230,5 +199,7 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script src="/js/productos-oferta.js"></script>
+		<script src="/js/catalogo.js"></script>
 	</body>
 </html>

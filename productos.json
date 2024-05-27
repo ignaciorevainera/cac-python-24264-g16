@@ -1,0 +1,72 @@
+[
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Cactus de Interior",
+		"category": "Plantas de Interior",
+		"price": "1.999,99",
+		"shippingTag": "Envío gratis"
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Maceta Colgante de Mimbre",
+		"category": "Macetas y Contenedores",
+		"price": "1.599,99",
+		"shippingTag": ""
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Sistema de Riego Automático para Jardín",
+		"category": "Sistemas de Riego",
+		"price": "3.499,99",
+		"shippingTag": "Envío gratis"
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Abono Orgánico para Plantas",
+		"category": "Sustratos y Fertilizantes",
+		"price": "2.499,99",
+		"shippingTag": ""
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Herramienta de Jardinería Multifuncional",
+		"category": "Herramientas",
+		"price": "3.999,99",
+		"shippingTag": "Envío gratis"
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Estatua de Buda para Jardín Zen",
+		"category": "Decoración para Jardín",
+		"price": "4.999,99",
+		"shippingTag": ""
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Introducción a la Jardinería",
+		"category": "Libros y Guías",
+		"price": "3.999,99",
+		"shippingTag": "Envío gratis"
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Kit de Cultivo de Tomates Cherry",
+		"category": "Huerta en Casa",
+		"price": "2.999,99",
+		"shippingTag": ""
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Set de 3 Macetas de Cerámica",
+		"category": "Macetas y Contenedores",
+		"price": "1.999,99",
+		"shippingTag": "Envío gratis"
+	},
+	{
+		"img": "https://via.placeholder.com/300",
+		"title": "Mesa de Jardín Plegable",
+		"category": "Muebles de Jardín",
+		"price": "5.999,99",
+		"shippingTag": ""
+	}
+]

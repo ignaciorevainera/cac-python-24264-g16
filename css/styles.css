@@ -190,7 +190,9 @@ footer div {
 
 /* catálogo y cards de productos */
 
-.cards-container {
+.cards-container,
+.cards-container-sales,
+.cards-category-container {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
@@ -227,8 +229,7 @@ footer div {
 }
 
 .product-card-title {
-	font-size: var(--font-size-lg);
-	text-transform: uppercase;
+	font-size: var(--font-size-md);
 	margin: 0 0 0.2rem 0;
 }
 
@@ -273,6 +274,7 @@ footer div {
 	gap: 0.2rem;
 	align-items: center;
 	justify-content: center;
+	user-select: none;
 }
 
 .product-card-shipping-tag i {
