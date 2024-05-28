@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@200..900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -42,18 +44,33 @@
 	--danger-light: #e35d6a;
 	--danger-dark: #9a2530;
 
-	/* Medidas */
+	/* Bordes */
 	--border-width: 1px;
 	--border-radius: 0.2rem;
 	--border-radius-sm: 0.4rem;
+
+	/* Transiciones */
 	--transition-duration: 0.5s;
 
+	/* Tamaños de fuente */
+	--font-size-xxs: clamp(0.3rem, 1vw, 0.4rem);
 	--font-size-xs: clamp(0.5rem, 1.5vw, 0.6rem);
 	--font-size-sm: clamp(0.7rem, 2vw, 0.8rem);
 	--font-size-md: clamp(0.9rem, 2.5vw, 1rem);
 	--font-size-lg: clamp(1.2rem, 3vw, 1.5rem);
 	--font-size-xl: clamp(1.4rem, 3.5vw, 1.7rem);
 	--font-size-xxl: clamp(1.8rem, 4vw, 2rem);
+
+	/* Rotación */
+	--rotate-right-5: rotate(5deg);
+	--rotate-right-10: rotate(10deg);
+	--rotate-left-5: rotate(-5deg);
+	--rotate-left-10: rotate(-10deg);
+
+	/* Sombras */
+	--box-shadow-md: 0px 6px 10px rgba(0, 0, 0, 0.2);
+	--box-shadow-lg: 0px 8px 12px rgba(0, 0, 0, 0.2);
+	--text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 body {
@@ -64,11 +81,10 @@ body {
 }
 
 main {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-
-	position: relative;
 }
 
 /* headings */
@@ -121,7 +137,7 @@ a {
 	padding: 0.5rem 1rem;
 	transition: background-color var(--transition-duration),
 		border-radius var(--transition-duration);
-	font-size: small;
+	font-size: var(--font-size-md);
 	text-decoration: none;
 	width: 100%;
 	text-align: center;
@@ -137,11 +153,18 @@ a {
 .navbar-brand {
 	font-weight: bold;
 	color: var(--primary);
-	transition: color var(--transition-duration);
+	transition: color var(--transition-duration),
+		transform var(--transition-duration);
+	font-size: var(--font-size-xxl);
+}
+
+.navbar-brand:visited {
+	color: var(--primary);
 }
 
 .navbar-brand:hover {
 	color: var(--primary-dark);
+	transform: var(--rotate-left-5);
 }
 
 /* section title */
@@ -151,6 +174,32 @@ a {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+/* hero */
+
+.section-hero {
+	width: 100%;
+	height: 60vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+.content-hero h1 {
+	font-size: var(--font-size-xxl);
+	text-shadow: var(--text-shadow);
+	text-wrap: balance;
+}
+
+.content-hero p {
+	font-size: var(--font-size-md);
+	text-shadow: var(--text-shadow);
+	text-wrap: balance;
 }
 
 /* footer */
@@ -174,7 +223,7 @@ footer div {
 }
 
 .redes i {
-	font-size: 1.5em;
+	font-size: var(--font-size-xl);
 	color: var(--primary);
 	transition: color var(--transition-duration);
 }
@@ -204,7 +253,7 @@ footer div {
 }
 
 .product-card:hover {
-	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: var(--box-shadow-lg);
 }
 
 .product-card-img {
@@ -249,7 +298,7 @@ footer div {
 
 .product-card-last-price {
 	text-decoration: line-through;
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-md);
 	color: var(--secondary);
 }
 
@@ -260,7 +309,7 @@ footer div {
 }
 
 .product-card-shipping-tag {
-	border: 1px solid var(--default-light);
+	border: var(--border-width) solid var(--default-light);
 	padding: 0.4rem;
 	border-radius: var(--border-radius);
 	font-size: var(--font-size-sm);
@@ -273,5 +322,22 @@ footer div {
 }
 
 .product-card-shipping-tag i {
-	font-size: var(--font-size-md);
+	font-size: var(--font-size-sm);
+}
+
+@media (width >= 640px) {
+	.product-card-last-price {
+		font-size: var(--font-size-sm);
+	}
+
+	.product-card-price {
+		font-size: var(--font-size-md);
+	}
+}
+
+@media (width >= 440px) {
+	.product-card-shipping-tag,
+	.product-card-shipping-tag i {
+		font-size: var(--font-size-xs);
+	}
 }
