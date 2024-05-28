@@ -59,4 +59,72 @@
 	color: var(--secondary);
 }
 
+button {
+	background-color: var(--primary);
+	color: var(--text-light);
+	border: none;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	transition: background-color var(--transition-duration),
+		border-radius var(--transition-duration);
+	font-size: small;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+}
 
+/* MODAL*/
+#modal1::backdrop{
+	background-color: rgba(0,0,0,.55);
+}
+#modal2::backdrop{
+	background-color: rgba(0,0,0,.55);
+}
+#modal3::backdrop{
+	background-color: rgba(0,0,0,.55);
+}
+#modal4::backdrop{
+	background-color: rgba(0,0,0,.55);
+}
+
+#modal1{
+	position: fixed; 
+	left: 20%;
+	top: 20%;
+	width: 50rem;
+	height: 10rem;
+	padding: 2% 2% 2% 2%;
+	border-color: gray;
+	border: .1em;
+}
+#modal2{
+	position: fixed; 
+	left: 20%;
+	top: 20%;
+	width: 50rem;
+	height: 10rem;
+	padding: 2% 2% 2% 2%;
+	border-color: gray;
+	border: .1em;
+}
+#modal3{
+	position: fixed; 
+	left: 20%;
+	top: 20%;
+	width: 50rem;
+	height: 10rem;
+	padding: 2% 2% 2% 2%;
+	border-color: gray;
+	border: .1em;
+}
+#modal4{
+	position: fixed; 
+	left: 20%;
+	top: 20%;
+	width: 50rem;
+	height: 10rem;
+	padding: 2% 2% 2% 2%;
+	border-color: gray;
+	border: .1em;
+}
