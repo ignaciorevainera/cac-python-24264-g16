@@ -1,72 +1,86 @@
 [
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2020/12/Fotos-web-4-1.png",
 		"title": "Cactus de Interior",
 		"category": "Plantas de Interior",
 		"price": "1.999,99",
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGW04e0zQZxlrOy-7_zlfgQWJXlPvn8mCo8vJImNGBwg&s",
 		"title": "Maceta Colgante de Mimbre",
 		"category": "Macetas y Contenedores",
 		"price": "1.599,99",
 		"shippingTag": ""
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://www.plomero.com.ar/wp-content/uploads/2017/03/sistema-de-riego-400.jpg",
 		"title": "Sistema de Riego Automático para Jardín",
 		"category": "Sistemas de Riego",
 		"price": "3.499,99",
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2020/11/Frame-579-1.jpg",
 		"title": "Abono Orgánico para Plantas",
 		"category": "Sustratos y Fertilizantes",
 		"price": "2.499,99",
 		"shippingTag": ""
 	},
 	{
-		"img": "https://via.placeholder.com/300",
-		"title": "Herramienta de Jardinería Multifuncional",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8iv-7btC3Fo4ZkUaUCdtILYD690NUgGqhg&s",
+		"title": "Pinza Jardinera Multifuncional",
 		"category": "Herramientas",
 		"price": "3.999,99",
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREaebV8g1bvDwftTgGmz5vWeK6lia5FnmvL7UpDzvRVw&s",
 		"title": "Estatua de Buda para Jardín Zen",
-		"category": "Decoración para Jardín",
+		"category": "Decoración de Jardín",
 		"price": "4.999,99",
 		"shippingTag": ""
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://images.cdn2.buscalibre.com/fit-in/360x360/ca/3d/ca3d205b911f112d3c52829beb227675.jpg",
 		"title": "Introducción a la Jardinería",
 		"category": "Libros y Guías",
 		"price": "3.999,99",
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://tienda.lacooperativa.es/cdn/shop/products/Garden-Pocket_Kit-cultivo-interior-Cherry-4BH2.jpg?v=1620142106",
 		"title": "Kit de Cultivo de Tomates Cherry",
 		"category": "Huerta en Casa",
 		"price": "2.999,99",
 		"shippingTag": ""
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2023/02/Fotos-web.png",
 		"title": "Set de 3 Macetas de Cerámica",
 		"category": "Macetas y Contenedores",
 		"price": "1.999,99",
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://via.placeholder.com/300",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1totGI2LRyK4ZKcK6hkRnIfoljFKStrSTEuewBkr5XA&s",
 		"title": "Mesa de Jardín Plegable",
 		"category": "Muebles de Jardín",
 		"price": "5.999,99",
+		"shippingTag": ""
+	},
+	{
+		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2020/12/Monstera-1-768x768.jpg",
+		"title": "Planta Monstera para Exterior",
+		"category": "Plantas de Exterior",
+		"price": "7.999,99",
+		"shippingTag": ""
+	},
+	{
+		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2020/12/1-1.png",
+		"title": "Helecho de Interior Culantrillo",
+		"category": "Plantas de Interior",
+		"price": "3.999,99",
 		"shippingTag": ""
 	}
 ]
