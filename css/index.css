@@ -148,7 +148,7 @@ input[type="email"] {
 	padding: 0.5rem 1rem;
 	transition: background-color var(--transition-duration),
 		border-radius var(--transition-duration);
-	font-size: small;
+	font-size: var(--font-size-sm);
 	text-decoration: none;
 	width: 100%;
 	outline: none;
@@ -180,7 +180,7 @@ input[type="submit"] {
 	padding: 0.5rem 1rem;
 	transition: background-color var(--transition-duration),
 		border-radius var(--transition-duration);
-	font-size: small;
+	font-size: var(--font-size-sm);
 	text-decoration: none;
 	width: 100%;
 	text-align: center;

@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="product-card-body">
                     <h5 class="product-card-title">${product.title}</h5>
                     <h6 class="product-card-category">${product.category}</h6>
-                    <div class="product-card-details">
+                    
+                </div>
+				<div class="product-card-footer">
+					<div class="product-card-details">
                         <div class="product-card-prices">
                             <span class="product-card-price">$${
 								product.price
@@ -31,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
 								: ""
 						}
                     </div>
-                    <a href="/pages/nosotros.html" class="button">Comprar</a>
-                </div>
+					<a href="/pages/nosotros.html" class="button">Comprar</a>
+				</div>
             `;
 			container.appendChild(productCard);
 		});
