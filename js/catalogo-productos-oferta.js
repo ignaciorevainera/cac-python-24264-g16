@@ -19,10 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 				<div class="product-card-footer">
 					<div class="product-card-details">
                         <div class="product-card-prices">
-                            <span class="product-card-price">$${
-								product.price
-							}</span>
-                        </div>
+                                <span class="product-card-last-price">\$${
+									product.lastPrice
+								}</span>
+                                <span class="product-card-price">\$${
+									product.price
+								}</span>
+                            </div>
                         ${
 							product.shippingTag
 								? `<span class="product-card-shipping-tag">${product.shippingTag} <i class="bx bxs-package"></i></span>`

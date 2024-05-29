@@ -82,11 +82,14 @@ main {
 	}
 }
 
-/* ofertas */
+@media (width >= 768px) {
+	.card-promotion h3 {
+		font-size: var(--font-size-xxl);
+	}
 
-.section-sales .g-card .g-card-body .g-card-last-price {
-	font-size: var(--font-size-sm);
-	text-decoration: line-through;
+	.card-promotion p {
+		font-size: var(--font-size-md);
+	}
 }
 
 /* búsqueda y filtros */
@@ -253,4 +256,14 @@ select {
 
 .checkbox-wrapper-2 .ikxBAC:checked:hover {
 	background-color: var(--primary-dark);
+}
+
+/* section sales y catalog */
+
+.section-sales,
+.section-catalog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
