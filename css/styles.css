@@ -205,13 +205,16 @@ a {
 /* footer */
 
 footer {
-	background-color: var(--background);
-	color: var(--text-dark);
+	background-color: var(--primary-dark);
+	color: var(--text-light);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0.5rem 1.5rem;
+	padding: 4rem 0 1rem 0;
+	margin: 3rem 0 0 0;
+	gap: 1rem;
 	text-align: center;
+	position: relative;
 }
 
 footer div {
@@ -222,14 +225,62 @@ footer div {
 	flex: 1;
 }
 
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+.button-go-up {
+	background-color: var(--primary);
+	border-radius: 100%;
+	width: 5rem;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 6rem;
+	position: absolute;
+	top: -30px;
+	transition: transform var(--transition-duration);
+}
+
+.button-go-up:hover {
+	animation: bounce 1s infinite both ease-in-out;
+}
+
+.button-go-up i {
+	font-size: 4rem;
+}
+
+.copyright {
+	margin: 0;
+}
+
+.integrantes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.redes {
+	display: flex;
+	gap: 1rem;
+}
+
 .redes i {
-	font-size: var(--font-size-xl);
-	color: var(--primary);
+	font-size: var(--font-size-xxl);
 	transition: color var(--transition-duration);
 }
 
 .redes i:hover {
-	color: var(--primary-dark);
+	color: var(--default-dark);
 }
 
 /* catálogo y cards de productos */

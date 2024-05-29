@@ -15,7 +15,7 @@ main {
 /* hero */
 
 .section-hero {
-	background-image: url("https://emprendedor.com/wp-content/uploads/2021/11/vivero.jpg");
+	background-image: url(/assets/hero-section/hero-catalogo.jpg);
 }
 
 /* promociones */
