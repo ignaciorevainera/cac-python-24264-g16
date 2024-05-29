@@ -2,7 +2,10 @@
 
 *,
 *::before,
-*::after {
+*::after,
+i,
+i::before,
+i::after {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -167,6 +170,27 @@ a {
 	transform: var(--rotate-left-5);
 }
 
+.navbar-toggler-cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.button-cart {
+	color: var(--text-dark);
+	font-size: var(--font-size-xxl);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (width >= 440px) {
+	.navbar-toggler-cart {
+		order: 3;
+	}
+}
+
 /* section title */
 
 .section-title {
@@ -217,12 +241,15 @@ footer {
 	position: relative;
 }
 
-footer div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 1%;
-	flex: 1;
+@media (width >= 640px) {
+	footer {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.redes {
+		order: 3;
+	}
 }
 
 @keyframes bounce {

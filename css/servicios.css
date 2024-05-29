@@ -74,20 +74,20 @@ button {
 }
 
 /* MODAL*/
-#modal1::backdrop{
-	background-color: rgba(0,0,0,.55);
+#modal1::backdrop {
+	background-color: rgba(0, 0, 0, 0.55);
 }
-#modal2::backdrop{
-	background-color: rgba(0,0,0,.55);
+#modal2::backdrop {
+	background-color: rgba(0, 0, 0, 0.55);
 }
-#modal3::backdrop{
-	background-color: rgba(0,0,0,.55);
+#modal3::backdrop {
+	background-color: rgba(0, 0, 0, 0.55);
 }
-#modal4::backdrop{
-	background-color: rgba(0,0,0,.55);
+#modal4::backdrop {
+	background-color: rgba(0, 0, 0, 0.55);
 }
 
-#modal1{
+#modal1 {
 	position: fixed;
 	align-content: center;
 	border-radius: 0.4rem;
@@ -97,9 +97,9 @@ button {
 	height: 40%;
 	padding: 2% 2% 2% 2%;
 	border-color: gray;
-	border: .1em;
+	border: 0.1em;
 }
-#modal2{
+#modal2 {
 	position: fixed;
 	align-content: center;
 	border-radius: 0.4rem;
@@ -109,9 +109,9 @@ button {
 	height: 40%;
 	padding: 2% 2% 2% 2%;
 	border-color: gray;
-	border: .1em;
+	border: 0.1em;
 }
-#modal3{
+#modal3 {
 	position: fixed;
 	align-content: center;
 	border-radius: 0.4rem;
@@ -121,9 +121,9 @@ button {
 	height: 40%;
 	padding: 2% 2% 2% 2%;
 	border-color: gray;
-	border: .1em;
+	border: 0.1em;
 }
-#modal4{
+#modal4 {
 	position: fixed;
 	align-content: center;
 	border-radius: 0.4rem;
@@ -133,5 +133,5 @@ button {
 	height: 40%;
 	padding: 2% 2% 2% 2%;
 	border-color: gray;
-	border: .1em;
+	border: 0.1em;
 }
