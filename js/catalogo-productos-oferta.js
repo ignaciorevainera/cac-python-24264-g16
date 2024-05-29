@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 									: ""
 							}
                         </div>
-                        <a href="#" class="button">Comprar</a>
+                        <a href="/pages/nosotros.html" class="button">Comprar</a>
                     </div>
                 `;
 				container.appendChild(productCard);
