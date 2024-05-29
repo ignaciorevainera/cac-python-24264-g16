@@ -4,14 +4,6 @@ main {
 	gap: 1rem;
 }
 
-.section-title {
-	font-size: var(--font-size-xxl);
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
-	margin-bottom: 1.5rem;
-}
-
 /* hero */
 
 .section-hero {
