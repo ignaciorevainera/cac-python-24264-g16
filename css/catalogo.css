@@ -60,6 +60,17 @@ main {
 	margin: 0;
 }
 
+.card-promotion-link-click-here {
+	color: var(--primary);
+	font-weight: bold;
+	transition: color var(--transition-duration);
+}
+
+.card-promotion-link-click-here:hover {
+	color: var(--primary-dark);
+	text-decoration: underline;
+}
+
 @media (width >= 640px) {
 	.section-promotions {
 		flex-wrap: nowrap;
