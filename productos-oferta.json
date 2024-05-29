@@ -1,6 +1,6 @@
 [
 	{
-		"img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRfEAvnOw5WeMy4c899Mv3oMZVuhyJuJLyj2IRKyR1VYUH_4pZvgKABJVbiiLhMyAPERrpF3MKVv9BwFkBfH9pSNdATxsqlmTXZxbrjsxI&usqp=CAE",
+		"img": "/assets/productos-ofertas/aloe-vera.webp",
 		"title": "Aloe Vera",
 		"category": "Plantas de Interior",
 		"lastPrice": "15.000,00",
@@ -8,7 +8,7 @@
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2020/12/blum-cilindro-maceta-barro-vivero-agronomia.jpg",
+		"img": "/assets/productos-ofertas/maceta-de-ceramica.webp",
 		"title": "Maceta de Cerámica",
 		"category": "Macetas y Contenedores",
 		"lastPrice": "3.000,00",
@@ -16,7 +16,7 @@
 		"shippingTag": ""
 	},
 	{
-		"img": "https://blog.hozelock.es/wp-content/uploads/2022/08/riego-automatico.jpg",
+		"img": "/assets/productos-ofertas/riego-automatico.webp",
 		"title": "Riego Automático",
 		"category": "Sistemas de Riego",
 		"lastPrice": "6.000,00",
@@ -24,7 +24,7 @@
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://santacafetera.cl/wp-content/uploads/2023/05/BIO-GROW-Abono-Enriquecido-BIOBIZZ.opti_.webp",
+		"img": "/assets/productos-ofertas/fertilizante-organico.webp",
 		"title": "Fertilizante Orgánico",
 		"category": "Sustratos y Fertilizantes",
 		"lastPrice": "2.500,00",
@@ -32,7 +32,7 @@
 		"shippingTag": ""
 	},
 	{
-		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZRYYn7yvjVReRHuQGguc1OEOuGGZMNSTZkbq9pcWNA&s",
+		"img": "/assets/productos-ofertas/guantes-de-jardineria.webp",
 		"title": "Guantes de Jardinería",
 		"category": "Herramientas",
 		"lastPrice": "3.500,00",
@@ -40,7 +40,7 @@
 		"shippingTag": "Envío gratis"
 	},
 	{
-		"img": "https://viveroagronomia.com.ar/wp-content/uploads/2020/12/Fotos-web-4-2.png",
+		"img": "/assets/productos-ofertas/piedras-decorativas.webp",
 		"title": "Piedras Decorativas",
 		"category": "Decoración para Jardín",
 		"lastPrice": "4.500,00",
