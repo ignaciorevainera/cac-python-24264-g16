@@ -247,15 +247,23 @@ footer div {
 	font-size: 6rem;
 	position: absolute;
 	top: -30px;
-	transition: transform var(--transition-duration);
+	transition: transform var(--transition-duration),
+		background-color var(--transition-duration);
 }
 
 .button-go-up:hover {
+	background-color: var(--default);
 	animation: bounce 1s infinite both ease-in-out;
 }
 
 .button-go-up i {
 	font-size: 4rem;
+	color: var(--default);
+	transition: color var(--transition-duration);
+}
+
+.button-go-up:hover i {
+	color: var(--primary);
 }
 
 .copyright {
