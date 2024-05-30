@@ -2,11 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	const container = document.querySelector(".cards-container");
 	const categorySelect = document.getElementById("category");
 	const orderBySelect = document.getElementById("orderBy");
-	let allProducts = []; // Almacena todos los productos al cargar la página
+	let allProducts = [];
 
-	// Función para mostrar los productos en el contenedor
 	function showProducts(products) {
-		container.innerHTML = ""; // Limpiar el contenedor de productos
+		container.innerHTML = "";
 
 		products.forEach((product) => {
 			const productCard = document.createElement("article");
@@ -41,24 +40,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	// Función para ordenar los productos según la opción seleccionada
 	function sortProducts(option) {
 		let sortedProducts = [...allProducts];
 		switch (option) {
-			case "2": // Menor precio
+			case "2":
 				sortedProducts.sort(
 					(a, b) => parseFloat(a.price) - parseFloat(b.price)
 				);
 				break;
-			case "3": // Mayor precio
+			case "3":
 				sortedProducts.sort(
 					(a, b) => parseFloat(b.price) - parseFloat(a.price)
 				);
 				break;
-			case "4": // Nombre A-Z
+			case "4":
 				sortedProducts.sort((a, b) => a.title.localeCompare(b.title));
 				break;
-			case "5": // Nombre Z-A
+			case "5":
 				sortedProducts.sort((a, b) => b.title.localeCompare(a.title));
 				break;
 			default:
@@ -67,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		showProducts(sortedProducts);
 	}
 
-	// Función para filtrar los productos según la categoría seleccionada
 	function filterProducts(category) {
 		const filteredProducts =
 			category === "1"
@@ -78,26 +75,23 @@ document.addEventListener("DOMContentLoaded", () => {
 		showProducts(filteredProducts);
 	}
 
-	// Evento change para el select de categoría
 	categorySelect.addEventListener("change", (event) => {
 		const selectedCategory = event.target.value;
-		orderBySelect.value = "1"; // Reiniciar el select de ordenamiento
+		orderBySelect.value = "1";
 		filterProducts(selectedCategory);
 	});
 
-	// Evento change para el select de ordenamiento
 	orderBySelect.addEventListener("change", (event) => {
 		const selectedOption = event.target.value;
-		categorySelect.value = "1"; // Reiniciar el select de categoría
+		categorySelect.value = "1";
 		sortProducts(selectedOption);
 	});
 
-	// Cargar todos los productos al inicio
 	fetch("/productos.json")
 		.then((response) => response.json())
 		.then((data) => {
-			allProducts = data; // Almacena todos los productos
-			showProducts(allProducts); // Muestra todos los productos al cargar la página
+			allProducts = data;
+			showProducts(allProducts);
 		})
 		.catch((error) =>
 			console.error("Error cargando los productos:", error)
