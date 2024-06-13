@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-	fetch("/productos-oferta.json")
+	fetch(
+		"https://raw.githubusercontent.com/ignaciorevainera/cac-python-24264-g16/main/productos-oferta.json"
+	)
 		.then((response) => response.json())
 		.then((data) => {
 			const container = document.querySelector(".cards-container-sales");

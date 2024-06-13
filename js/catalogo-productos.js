@@ -87,7 +87,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		sortProducts(selectedOption);
 	});
 
-	fetch("/productos.json")
+	fetch(
+		"https://raw.githubusercontent.com/ignaciorevainera/cac-python-24264-g16/main/productos.json"
+	)
 		.then((response) => response.json())
 		.then((data) => {
 			allProducts = data;
