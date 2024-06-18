@@ -46,12 +46,12 @@
 			<nav class="navbar navbar-expand-sm">
 				<div class="container-fluid px-4 p-2">
 					<a class="navbar-brand pt-0" href="/index.html">Green</a>
-					<div class="navbar-toggler-cart">
+					<div class="navbar-toggler">
 						<a href="/pages/nosotros.html" class="button-cart"
 							><i class="bx bxs-cart"></i
 						></a>
 						<button
-							class="navbar-toggler p-0 border-0"
+							class="navbar-toggler-button p-0 border-0"
 							type="button"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarNavAltMarkup"
@@ -70,9 +70,7 @@
 							<a class="nav-link" href="/pages/catalogo.html"
 								>Catálogo</a
 							>
-							<a
-								class="nav-link active"
-								href="/pages/servicios.html"
+							<a class="nav-link" href="/pages/servicios.html"
 								>Servicios</a
 							>
 							<a class="nav-link" href="/pages/nosotros.html"
@@ -87,119 +85,128 @@
 		<main>
 			<section class="section-servicios">
 				<h1 class="section-title">Nuestros Servicios</h1>
-				<div class="g-card-container">
-					<article class="g-card">
+				<div class="card-service-container">
+					<article class="card-service">
 						<img
 							src="/assets/servicios/floricultura.webp"
-							class="g-card-img"
-							alt="..."
+							class="card-service-img"
+							alt="Imagen de floricultura"
 						/>
-						<div class="g-card-body">
-							<h5 class="g-card-title">Floricultura</h5>
-							<h6 class="g-card-descripcion">
-								Referente Mayorista Minorista de Florerias
+						<div class="card-service-body">
+							<h5 class="card-service-title">Floricultura</h5>
+							<h6 class="card-service-descripcion">
+								Referente mayorista y minorista de florerías
 							</h6>
-							<button id="btn-abrir-modal1">Mas Info</button>
+							<button class="button" id="btn-abrir-modal1">
+								Más información
+							</button>
 						</div>
 
 						<dialog id="modal1">
 							<p>
 								Llevamos a cabo de forma exitosa la producción
-								de flores y plantas convirtiéndose en referente
-								en el mercado por la calidad de sus productos.
+								de flores y plantas, convirtiéndonos en un
+								referente en el mercado por la calidad de
+								nuestros productos.
 							</p>
-							<button id="btn-cerrar-modal1">
+							<button class="button" id="btn-cerrar-modal1">
 								Cerrar ventana
 							</button>
 						</dialog>
 					</article>
 
-					<article class="g-card">
+					<article class="card-service">
 						<img
 							src="/assets/servicios/sistema-de-riego.webp"
-							class="g-card-img"
-							alt="..."
+							class="card-service-img"
+							alt="Imagen de sistema de riego"
 						/>
-						<div class="g-card-body">
-							<h5 class="g-card-title">Sistema de Riego</h5>
-							<h6 class="g-card-descripcion">
-								Sistema de Riego para su Jardín o Espacios
-								Verdes
+						<div class="card-service-body">
+							<h5 class="card-service-title">Sistema de Riego</h5>
+							<h6 class="card-service-descripcion">
+								Sistema de riego para su jardín o espacios
+								verdes
 							</h6>
-							<button id="btn-abrir-modal2">Mas Info</button>
+							<button class="button" id="btn-abrir-modal2">
+								Más información
+							</button>
 						</div>
 
 						<dialog id="modal2">
 							<p>
 								Para que un césped se mantenga verde la mayor
 								parte del año y sobre todo en épocas de altas
-								temperaturas donde la evapotranspiración es mas
+								temperaturas, donde la evapotranspiración es más
 								intensa, se necesita regar más frecuentemente y
-								en forma uniforme.
+								de forma uniforme.
 							</p>
-							<button id="btn-cerrar-modal2">
+							<button class="button" id="btn-cerrar-modal2">
 								Cerrar ventana
 							</button>
 						</dialog>
 					</article>
 
-					<article class="g-card">
+					<article class="card-service">
 						<img
 							src="/assets/servicios/jardineria.webp"
-							class="g-card-img"
-							alt="..."
+							class="card-service-img"
+							alt="Imagen de jardinería"
 						/>
-						<div class="g-card-body">
-							<h5 class="g-card-title">Jardineria</h5>
-							<h6 class="g-card-descripcion">
-								Asesoramiento a empresas, estudios de
+						<div class="card-service-body">
+							<h5 class="card-service-title">Jardinería</h5>
+							<h6 class="card-service-descripcion">
+								Asesoramiento a empresas y estudios de
 								arquitectura
 							</h6>
-							<button id="btn-abrir-modal3">Mas Info</button>
+							<button class="button" id="btn-abrir-modal3">
+								Más información
+							</button>
 						</div>
 
 						<dialog id="modal3">
-							<p>El servicio de Jardineria incluye:</p>
+							<p>El servicio de jardinería incluye:</p>
 							<ul>
 								<li>
-									Mantenimiento,Proyectos de Jardines y
-									Espacios Verdes
+									Mantenimiento y proyectos de jardines y
+									espacios verdes
 								</li>
-								<li>Tratamiento Fitosanitario</li>
-								<li>Fertilización y Enmiendas Orgánicas</li>
+								<li>Tratamiento fitosanitario</li>
+								<li>Fertilización y enmiendas orgánicas</li>
 							</ul>
-							<button id="btn-cerrar-modal3">
+							<button class="button" id="btn-cerrar-modal3">
 								Cerrar ventana
 							</button>
 						</dialog>
 					</article>
 
-					<article class="g-card">
+					<article class="card-service">
 						<img
 							src="/assets/servicios/paisajismo.webp"
-							class="g-card-img"
-							alt="..."
+							class="card-service-img"
+							alt="Imagen de paisajismo"
 						/>
-						<div class="g-card-body">
-							<h5 class="g-card-title">Paisajismo</h5>
-							<h6 class="g-card-descripcion">
-								Proyectamos y Construimos Espacios Verdes de
-								Todo Tipo
+						<div class="card-service-body">
+							<h5 class="card-service-title">Paisajismo</h5>
+							<h6 class="card-service-descripcion">
+								Proyectamos y construimos espacios verdes de
+								todo tipo
 							</h6>
-							<button id="btn-abrir-modal4">Mas Info</button>
+							<button class="button" id="btn-abrir-modal4">
+								Más información
+							</button>
 						</div>
 
 						<dialog id="modal4">
 							<p>
-								Al realizar un diseño ya sea al Exterior como en
-								interiores, hay pautas que no deberían ser
+								Al realizar un diseño, ya sea en exteriores como
+								en interiores, hay pautas que no deberían ser
 								pasadas por alto. Orientación, visuales,
-								condiciones climáticas, colores y texturas, son
-								algunas de ellas. Analizándolas, y manejando un
+								condiciones climáticas, colores y texturas son
+								algunas de ellas. Analizándolas y manejando un
 								buen criterio estético, se puede lograr el
 								objetivo deseado.
 							</p>
-							<button id="btn-cerrar-modal4">
+							<button class="button" id="btn-cerrar-modal4">
 								Cerrar ventana
 							</button>
 						</dialog>
