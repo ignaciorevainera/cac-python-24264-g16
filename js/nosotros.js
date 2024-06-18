@@ -1,6 +1,8 @@
-let options = document.querySelector("select");
-let button_about_plants = document.querySelector("#About_plant");
-let button_other = document.querySelector("#Other");
+let options = document.querySelector("#options");
+let button_about_plants = document.querySelector("#about_plant");
+let button_other = document.querySelector("#other");
+
+options.style.display = "none";
 
 button_about_plants.addEventListener("click", function () {
 	options.style.display = "block";
