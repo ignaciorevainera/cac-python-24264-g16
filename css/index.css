@@ -1,10 +1,10 @@
-/* hero */
+/* Hero Image */
 
 .section-hero {
 	background-image: url(/assets/hero-section/hero-index.jpg);
 }
 
-/* ofertas */
+/* Ofertas */
 
 .section-sales {
 	display: flex;
@@ -13,9 +13,9 @@
 }
 
 .button-view-all {
-	font-size: var(--font-size-md);
 	width: 80%;
 	align-self: center;
+	font-size: var(--font-size-md);
 	margin: 1rem 0 0 0;
 }
 
@@ -31,7 +31,7 @@
 	}
 }
 
-/* categories */
+/* Categorías */
 
 .section-categories {
 	display: flex;
@@ -41,29 +41,29 @@
 
 .category-card {
 	position: relative;
+	height: 18rem;
 	background-color: var(--background-dark);
 	border-radius: var(--border-radius);
 	transition: box-shadow var(--transition-duration);
-	height: 18rem;
 }
 
 .category-card:hover {
-	box-shadow: var(--box-shadow-md);
+	box-shadow: var(--box-shadow);
 }
 
 .category-card-title {
-	font-size: var(--font-size-lg);
-	text-align: center;
-	font-weight: bold;
-	margin: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 5;
+	margin: 0;
+	font-size: var(--font-size-lg);
+	text-align: center;
+	font-weight: var(--font-weight-bold);
 	text-shadow: var(--text-shadow);
+	z-index: 5;
 }
 
 .category-card-img {
@@ -84,7 +84,7 @@
 	}
 }
 
-/* video */
+/* Video */
 
 .section-video,
 .section-video-container {
@@ -114,7 +114,7 @@
 	}
 }
 
-/* map */
+/* Map */
 
 .section-map,
 .section-map-container {
@@ -145,31 +145,31 @@
 	}
 }
 
-/* newsletter */
+/* Newsletter */
 
 .section-newsletter {
+	position: relative;
+	width: 95%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	align-self: center;
 	flex-wrap: wrap;
 	gap: 1rem;
 	padding: 1.5rem 1rem;
-	width: 95%;
-	align-self: center;
-	border-radius: var(--border-radius);
-	position: relative;
+	margin: 5rem 0 4rem 0;
 	background-color: var(--primary);
 	color: var(--text-light);
-	margin: 5rem 0 4rem 0;
-	font-weight: 100;
+	font-weight: var(--font-weight-light);
 	text-align: center;
+	border-radius: var(--border-radius);
 	transition: background-color var(--transition-duration),
 		box-shadow var(--transition-duration);
 }
 
 .section-newsletter:hover {
-	box-shadow: var(--box-shadow-md);
+	box-shadow: var(--box-shadow);
 }
 
 .section-newsletter-icon {
@@ -190,14 +190,14 @@
 
 .section-newsletter-title {
 	font-size: var(--font-size-xl);
-	font-weight: bold;
+	font-weight: var(--font-weight-bold);
 }
 
 .section-newsletter-inputs {
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	gap: 0.5rem;
-	width: 80%;
 }
 
 .section-newsletter-inputs input[type="email"] {
@@ -208,60 +208,9 @@
 	width: 40%;
 }
 
-input[type="email"] {
-	background-color: var(--background);
-	color: var(--text-dark);
-	border: none;
-	border-radius: var(--border-radius);
-	padding: 0.5rem 1rem;
-	transition: background-color var(--transition-duration),
-		border-radius var(--transition-duration);
-	font-size: var(--font-size-sm);
-	text-decoration: none;
-	width: 100%;
-	outline: none;
-	font-size: var(--font-size-sm);
-}
-
-input[type="email"]:hover {
-	background-color: var(--default-dark);
-	border-radius: var(--border-radius-sm);
-}
-
-input[type="email"]:focus {
-	background-color: var(--default-light);
-	outline: 1px solid var(--default-dark);
-}
-
-@media (width >= 768px) {
-	input[type="email"] {
-		font-size: var(--font-size-md);
-	}
-}
-
-input[type="submit"] {
-	background-color: var(--danger);
-	color: var(--text-light);
-	border: none;
-	border-radius: var(--border-radius);
-	cursor: pointer;
-	padding: 0.5rem 1rem;
-	transition: background-color var(--transition-duration),
-		border-radius var(--transition-duration);
-	font-size: var(--font-size-sm);
-	text-decoration: none;
-	width: 100%;
-	text-align: center;
-}
-
-input[type="submit"]:hover {
-	background-color: var(--danger-dark);
-	border-radius: var(--border-radius-sm);
-}
-
 .section-newsletter-advice {
 	font-size: var(--font-size-sm);
-	font-weight: normal;
+	font-weight: var(--font-weight-normal);
 	color: var(--default);
 	user-select: none;
 	text-wrap: balance;
