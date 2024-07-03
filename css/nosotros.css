@@ -87,12 +87,6 @@ form {
 	}
 }
 
-.upper-label {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-}
-
 .radio-label {
 	display: flex;
 	flex-direction: row;

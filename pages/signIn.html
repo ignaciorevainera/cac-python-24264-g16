@@ -37,9 +37,9 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="/css/styles.css" />
-		<link rel="stylesheet" href="/css/catalogo.css" />
+		<link rel="stylesheet" href="/css/signIn.css" />
 
-		<title>Catálogo</title>
+		<title>Inicio</title>
 	</head>
 	<body>
 		<header>
@@ -94,107 +94,22 @@
 		</header>
 
 		<main>
-			<div class="section-hero">
-				<div class="content-hero">
-					<h1>Embellece tu Hogar con Nuestras Plantas</h1>
-					<p>
-						Descubre la mejor selección de plantas y productos de
-						jardinería para cada rincón de tu hogar.
-					</p>
+			<section class="section-form">
+				<form action="">
+					<label class="upper-label" for="username"
+						>Nombre de usuario<input type="text" required
+					/></label>
+					<label class="upper-label" for="password"
+						>Contraseña<input type="password" required
+					/></label>
+					<input type="submit" value="Ingresar" required />
+				</form>
+				<div class="msg-signup">
+					<span>
+						¿No tienes una cuenta?
+						<a href="/pages/signUp.html">Crea una aquí</a></span
+					>
 				</div>
-			</div>
-
-			<section class="section-promotions">
-				<article class="card-promotion">
-					<h3>Envío gratis</h3>
-					<p>
-						En compras superiores a $10.000, el envío es gratis y a
-						todo el país.
-					</p>
-				</article>
-
-				<article class="card-promotion">
-					<h3>3 y 6 cuotas sin interés</h3>
-					<p>
-						En compras superiores a $20.000, podes pagar en 3 o 6
-						cuotas sin interés.
-					</p>
-				</article>
-
-				<article class="card-promotion">
-					<h3>Servicio al cliente</h3>
-					<p>
-						Contamos con un servicio de atención al cliente las 24
-						horas, puedes comunicarte por WhatsApp o haciendo click
-						<a
-							href="/pages/nosotros.html"
-							class="card-promotion-link-click-here"
-							>acá</a
-						>.
-					</p>
-				</article>
-			</section>
-
-			<section class="section-sales">
-				<h2 class="section-title">Nuestras ofertas</h2>
-				<div class="cards-container-sales"></div>
-			</section>
-
-			<section class="section-search">
-				<input type="search" placeholder="Buscar" />
-				<div class="section-search-filters">
-					<div class="section-search-filters-selectors">
-						<select name="category" id="category">
-							<option value="1">Categoría</option>
-							<option value="Plantas de Interior">
-								Plantas de Interior
-							</option>
-							<option value="Plantas de Exterior">
-								Plantas de Exterior
-							</option>
-							<option value="Macetas y Contenedores">
-								Macetas y Contenedores
-							</option>
-							<option value="Herramientas">Herramientas</option>
-							<option value=">Sustratos y Fertilizantes">
-								Sustratos y Fertilizantes
-							</option>
-							<option value="Sistemas de Riego">
-								Sistemas de Riego
-							</option>
-							<option value="Decoración de Jardín">
-								Decoración de Jardín
-							</option>
-							<option value="Libros y Guías">
-								Libros y Guías
-							</option>
-							<option value="Muebles de Jardín">
-								Muebles de Jardín
-							</option>
-						</select>
-						<select name="orderBy" id="orderBy">
-							<option value="1">Ordenar por</option>
-							<option value="2">Menor precio</option>
-							<option value="3">Mayor precio</option>
-							<option value="4">Nombre A-Z</option>
-							<option value="5">Nombre Z-A</option>
-						</select>
-					</div>
-					<label for="freeShipping"
-						>Envío gratis
-						<div class="checkbox-wrapper-2">
-							<input
-								id="freeShipping"
-								type="checkbox"
-								class="sc-gJwTLC ikxBAC"
-							/>
-						</div>
-					</label>
-				</div>
-			</section>
-
-			<section class="section-catalog">
-				<div class="cards-container"></div>
 			</section>
 		</main>
 
@@ -227,7 +142,5 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
-		<script src="/js/catalogo-productos-oferta.js"></script>
-		<script src="/js/catalogo-productos.js"></script>
 	</body>
 </html>

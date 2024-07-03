@@ -1,0 +1,46 @@
+.section-form {
+	width: 90%;
+	height: 100%;
+	align-self: center;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+@media (width >= 768px) {
+	.section-form {
+		width: 60%;
+	}
+}
+
+@media (width >= 1024px) {
+	.section-form {
+		width: 30%;
+	}
+}
+
+.msg-signup {
+	margin-top: 1rem;
+}
+
+.msg-signup a {
+	font-weight: var(--font-weight-bold);
+	color: var(--primary);
+}
+
+.error-message {
+	color: var(--danger);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-bold);
+}
+
+.error-message.hidden {
+	display: none;
+}

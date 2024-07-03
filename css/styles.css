@@ -160,6 +160,15 @@ a {
 	border-radius: var(--border-radius-sm);
 }
 
+/* Label */
+
+label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	user-select: none;
+}
+
 /* Textarea */
 
 textarea {
@@ -309,6 +318,18 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 @media (width >= 440px) {
 	.navbar-toggler-cart {
 		order: 3;
+	}
+}
+
+.navbar-nav-functions {
+	display: none;
+}
+
+@media (width >= 576px) {
+	.navbar-nav-functions {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
 	}
 }
 
