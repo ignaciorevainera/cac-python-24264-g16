@@ -110,8 +110,7 @@
 					<label class="upper-label" for="title"
 						>Nombre<input id="title" type="text" required
 					/></label>
-					<select name="category" id="category">
-						<option value="1">Categoría</option>
+					<select name="category" id="category" required>
 						<option value="Plantas de Interior">
 							Plantas de Interior
 						</option>
@@ -139,8 +138,9 @@
 					<label class="upper-label" for="precio"
 						>Precio<input id="precio" type="number" required
 					/></label>
-					<label for="cantidad">
-						Cantidad<input id="cantidad" type="number" required />
+					<label for="stock" class="checkbox-label">
+						<input id="stock" type="checkbox" />¿Hay stock de este
+						producto?
 					</label>
 					<label for="freeShipping" class="checkbox-label">
 						<input id="freeShipping" type="checkbox" />Envío gratis
