@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="/css/styles.css" />
 		<link rel="stylesheet" href="/css/signIn.css" />
 
-		<title>Inicio</title>
+		<title>Agregar Producto</title>
 	</head>
 	<body>
 		<header>
@@ -94,22 +94,34 @@
 		</header>
 
 		<main>
+            <h2 class="section-title">Agregar nuevo producto</h2>
 			<section class="section-form">
 				<form action="">
-					<label class="upper-label" for="username"
-						>Nombre de usuario<input id="username" type="text" required
+					<label class="upper-label" for="title"
+						>Nombre<input id="title" type="text" required
 					/></label>
-					<label class="upper-label" for="password"
-						>Contraseña<input id="password" type="password" required
+					<label class="upper-label" for="categoria"
+						>Categoría<input id="categoria" type="text" required
 					/></label>
-					<input type="submit" value="Ingresar" required />
+					<label class="upper-label" for="precio"
+                        >Precio<input id="precio" type="number" required
+                    /></label>
+                    <label for="cantidad">
+                        Cantidad<input id="cantidad" type="number" required/>
+                    </label>
+                    <label for="freeShipping"
+						>Envío gratis
+						<div class="checkbox-wrapper-2">
+							<input
+								id="freeShipping"
+								type="checkbox"
+								class="sc-gJwTLC ikxBAC"
+							/>
+						</div>
+					</label>
+					<input type="submit" value="Agregar producto" required />
+					<input type="hidden" id="post_id" name="post_id">
 				</form>
-				<div class="msg-signup">
-					<span>
-						¿No tienes una cuenta?
-						<a href="/pages/signUp.html">Crea una aquí</a></span
-					>
-				</div>
 			</section>
 		</main>
 
@@ -142,5 +154,6 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+        <script src="/js/add_update_product.js"></script>
 	</body>
 </html>
