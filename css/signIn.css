@@ -44,3 +44,10 @@ form {
 .error-message.hidden {
 	display: none;
 }
+
+.checkbox-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+}

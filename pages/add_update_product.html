@@ -53,6 +53,11 @@
 						<a href="/pages/signUp.html" class="button-cart"
 							><i class="bx bxs-user-circle"></i
 						></a>
+						<a
+							href="/pages/add_update_product.html"
+							class="button-cart"
+							><i class="bx bxs-add-to-queue"></i
+						></a>
 						<button
 							class="navbar-toggler-button p-0 border-0"
 							type="button"
@@ -88,6 +93,11 @@
 						<a href="/pages/signUp.html" class="button-cart"
 							><i class="bx bxs-user-circle"></i
 						></a>
+						<a
+							href="/pages/add_update_product.html"
+							class="button-cart"
+							><i class="bx bxs-add-to-queue"></i
+						></a>
 					</div>
 				</div>
 			</nav>
@@ -100,24 +110,40 @@
 					<label class="upper-label" for="title"
 						>Nombre<input id="title" type="text" required
 					/></label>
-					<label class="upper-label" for="categoria"
-						>Categoría<input id="categoria" type="text" required
-					/></label>
+					<select name="category" id="category">
+						<option value="1">Categoría</option>
+						<option value="Plantas de Interior">
+							Plantas de Interior
+						</option>
+						<option value="Plantas de Exterior">
+							Plantas de Exterior
+						</option>
+						<option value="Macetas y Contenedores">
+							Macetas y Contenedores
+						</option>
+						<option value="Herramientas">Herramientas</option>
+						<option value=">Sustratos y Fertilizantes">
+							Sustratos y Fertilizantes
+						</option>
+						<option value="Sistemas de Riego">
+							Sistemas de Riego
+						</option>
+						<option value="Decoración de Jardín">
+							Decoración de Jardín
+						</option>
+						<option value="Libros y Guías">Libros y Guías</option>
+						<option value="Muebles de Jardín">
+							Muebles de Jardín
+						</option>
+					</select>
 					<label class="upper-label" for="precio"
 						>Precio<input id="precio" type="number" required
 					/></label>
 					<label for="cantidad">
 						Cantidad<input id="cantidad" type="number" required />
 					</label>
-					<label for="freeShipping"
-						>Envío gratis
-						<div class="checkbox-wrapper-2">
-							<input
-								id="freeShipping"
-								type="checkbox"
-								class="sc-gJwTLC ikxBAC"
-							/>
-						</div>
+					<label for="freeShipping" class="checkbox-label">
+						<input id="freeShipping" type="checkbox" />Envío gratis
 					</label>
 					<input type="submit" value="Agregar producto" required />
 					<input type="hidden" id="post_id" name="post_id" />
