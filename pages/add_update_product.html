@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="/css/styles.css" />
 		<link rel="stylesheet" href="/css/signIn.css" />
 
-		<title>Inicio</title>
+		<title>Agregar Producto</title>
 	</head>
 	<body>
 		<header>
@@ -104,28 +104,50 @@
 		</header>
 
 		<main>
+			<h2 class="section-title">Agregar nuevo producto</h2>
 			<section class="section-form">
 				<form action="">
-					<label class="upper-label" for="username"
-						>Nombre de usuario<input
-							id="username"
-							type="text"
-							required
+					<label class="upper-label" for="title"
+						>Nombre<input id="title" type="text" required
 					/></label>
-					<label class="upper-label" for="password"
-						>Contraseña<input
-							id="password"
-							type="password"
-							required
+					<select name="category" id="category">
+						<option value="1">Categoría</option>
+						<option value="Plantas de Interior">
+							Plantas de Interior
+						</option>
+						<option value="Plantas de Exterior">
+							Plantas de Exterior
+						</option>
+						<option value="Macetas y Contenedores">
+							Macetas y Contenedores
+						</option>
+						<option value="Herramientas">Herramientas</option>
+						<option value=">Sustratos y Fertilizantes">
+							Sustratos y Fertilizantes
+						</option>
+						<option value="Sistemas de Riego">
+							Sistemas de Riego
+						</option>
+						<option value="Decoración de Jardín">
+							Decoración de Jardín
+						</option>
+						<option value="Libros y Guías">Libros y Guías</option>
+						<option value="Muebles de Jardín">
+							Muebles de Jardín
+						</option>
+					</select>
+					<label class="upper-label" for="precio"
+						>Precio<input id="precio" type="number" required
 					/></label>
-					<input type="submit" value="Ingresar" required />
+					<label for="cantidad">
+						Cantidad<input id="cantidad" type="number" required />
+					</label>
+					<label for="freeShipping" class="checkbox-label">
+						<input id="freeShipping" type="checkbox" />Envío gratis
+					</label>
+					<input type="submit" value="Agregar producto" required />
+					<input type="hidden" id="post_id" name="post_id" />
 				</form>
-				<div class="msg-signup">
-					<span>
-						¿No tienes una cuenta?
-						<a href="/pages/signUp.html">Crea una aquí</a></span
-					>
-				</div>
 			</section>
 		</main>
 
@@ -158,5 +180,6 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script src="/js/add_update_product.js"></script>
 	</body>
 </html>

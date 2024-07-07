@@ -11,16 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		} else {
 			errorMessage.classList.add("hidden");
 
-			//Data en orden => fetch a la API
-
-			let user_info = {
-				email: form.getElementById("email").value,
-				username: form.getElementById("username").value,
-				password: password.value,
-			};
+			//Data en orden => fetch a la API.
+			//Hay que ver como se efectua la validación;con el error code..? TODO
 
 			fetchData(
-				"http://127.0.0.1:5000/register/",
+				"http://127.0.0.1:5000/login/",
 				"POST",
 				(data) => {
 					form.reset();
