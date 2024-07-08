@@ -1,9 +1,10 @@
-let form = document.getElementsByTagName("form");
+let form = document.getElementsById("form");
 let params = new URLSearchParams(document.location.search);
 let post_id = params.get("post_id");
 
 function add_new_post(event) {
 	let post_data = {
+        img : form.getElementsById("img"),
 		title: form.getElementsById("title").value,
 		description: form.getElementsById("categoria").value,
 		price: form.getElementsById("precio").value,
@@ -26,6 +27,7 @@ function add_new_post(event) {
 
 function update_post(event) {
 	let post_data = {
+        img : form.getElementsById("img"),
 		title: form.getElementsById("title").value,
 		description: form.getElementsById("categoria").value,
 		price: form.getElementsById("precio").value,
@@ -55,6 +57,7 @@ function add_or_update() {
 		// Faltaria qeu el id quede asociado con cada producto en el front ya que no son fomrularios.
 		let url = "http://localhost:5000/posts/<int:post_id>/" + post_id;
 		fetchData(url, "GET", (data) => {
+            form.getElementsById("img").src=data.img;   //Falta agregar attr. img
 			form.getElementsById("title").value = data.title;
 			form.getElementsById("categoria").value = data.description;
 			form.getElementsById("precio").value = data.price;
