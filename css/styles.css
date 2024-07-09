@@ -594,6 +594,7 @@ footer {
 
 .product-card-title,
 .card-service-title {
+	text-wrap: balance;
 	font-size: var(--font-size-md);
 	margin: 0 0 0.2rem 0;
 }
