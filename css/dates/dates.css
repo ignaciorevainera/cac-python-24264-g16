@@ -1,0 +1,58 @@
+.section-appointments {
+	width: 90%;
+	align-self: center;
+}
+
+@media (width >= 1024px) {
+	.section-appointments {
+		width: 60%;
+	}
+}
+
+.card-appointment {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 1rem;
+	margin: 2rem;
+	background-color: var(--primary-light);
+	border-radius: var(--border-radius);
+	color: var(--text-light);
+}
+
+.card-appointment-body {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+}
+
+.card-appointment-name {
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-bold);
+}
+
+.card-appointment-service {
+	font-size: var(--font-size-md);
+	font-weight: var(--font-weight-normal);
+}
+
+.card-appointment-date {
+	font-size: var(--font-size-sm);
+}
+
+@media (width >= 768px) {
+	.card-appointment-name {
+		font-size: var(--font-size-xl);
+	}
+
+	.card-appointment-service {
+		font-size: var(--font-size-lg);
+	}
+
+	.card-appointment-date {
+		font-size: var(--font-size-md);
+	}
+}

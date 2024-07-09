@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+		<link rel="icon" type="image/png" href="/favicon/favicon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/favicon/apple-touch-icon.png"
+		/>
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/favicon/safari-pinned-tab.svg"
+			color="#1b892f"
+		/>
+		<meta name="msapplication-TileColor" content="#1b892f" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Boxicon -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/dates/dates.css" />
+
+		<title>Servicios</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-sm">
+				<div class="container-fluid px-4 p-2">
+					<a class="navbar-brand pt-0" href="/index.html">Green</a>
+					<div class="navbar-toggler">
+						<a href="/pages/nosotros.html" class="button-cart"
+							><i class="bx bxs-cart"></i
+						></a>
+						<a href="/pages/signUp.html" class="button-cart"
+							><i class="bx bxs-user-circle"></i
+						></a>
+						<a href="/pages/add-date.html" class="button-cart"
+							><i class="bx bxs-add-to-queue"></i
+						></a>
+						<button
+							class="navbar-toggler-button p-0 border-0"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNavAltMarkup"
+							aria-controls="navbarNavAltMarkup"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarNavAltMarkup"
+					>
+						<div class="navbar-nav">
+							<a class="nav-link" href="/pages/catalogo.html"
+								>Catálogo</a
+							>
+							<a class="nav-link" href="/pages/servicios.html"
+								>Servicios</a
+							>
+							<a class="nav-link" href="/pages/nosotros.html"
+								>Nosotros</a
+							>
+						</div>
+					</div>
+					<div class="navbar-nav-functions">
+						<a href="/pages/nosotros.html" class="button-cart"
+							><i class="bx bxs-cart"></i
+						></a>
+						<a href="/pages/signUp.html" class="button-cart"
+							><i class="bx bxs-user-circle"></i
+						></a>
+						<a href="/pages/add-date.html" class="button-cart"
+							><i class="bx bxs-add-to-queue"></i
+						></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="section-actions">
+				<a
+					class="button button-create-appoinment"
+					href="/pages/dates/add-date.html"
+					>Agendar cita</a
+				>
+			</section>
+			<section class="section-appointments">
+				<h1 class="section-title">Próximas citas</h1>
+				<section class="container-appointments"></section>
+			</section>
+		</main>
+
+		<footer>
+			<a href="#" class="button-go-up"
+				><i class="bx bxs-chevron-up"></i
+			></a>
+			<div class="integrantes">
+				<span>Estefanía Gauto</span>
+				<span>Ariel Piñeiro</span>
+				<span>Ignacio Revainera</span>
+			</div>
+			<div class="redes">
+				<a href="https://www.facebook.com/usbotanicgarden/"
+					><i class="bx bxl-facebook-square"></i
+				></a>
+				<a
+					href="https://www.instagram.com/explore/tags/jardineria/?hl=es"
+					><i class="bx bxl-instagram-alt"></i
+				></a>
+				<a href="https://x.com/BHG"><i class="bx bxl-twitter"></i></a>
+			</div>
+			<div class="copyright">
+				<small>Copyright 2024 @ Grupo 16</small>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/dates/fetch-data.js"></script>
+		<script src="/js/dates/dates.js"></script>
+	</body>
+</html>
