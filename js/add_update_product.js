@@ -4,12 +4,13 @@ let post_id = params.get("post_id");
 
 function add_new_post(event) {
 	let post_data = {
-        img : form.getElementsById("img"),
+        img : form.getElementsById("img").src,
 		title: form.getElementsById("title").value,
-		description: form.getElementsById("categoria").value,
+		description: form.getElementsById("category").value,
 		price: form.getElementsById("precio").value,
 		quantity: form.getElementsById("cantidad").value,
-		//Faltaria agregar shipping y sale como atributos de tabla
+        shipping : form.getElementsById("freeShipping").value
+		//Faltaria agregar sale como selector del form , en dicho caso , un precio de oferta.
 	};
 
 	let utr = "http://localhost:5000/posts/";
@@ -27,24 +28,27 @@ function add_new_post(event) {
 
 function update_post(event) {
 	let post_data = {
-        img : form.getElementsById("img"),
+        img : form.getElementsById("img").src,
 		title: form.getElementsById("title").value,
-		description: form.getElementsById("categoria").value,
+		description: form.getElementsById("category").value,
 		price: form.getElementsById("precio").value,
 		quantity: form.getElementsById("cantidad").value,
+        shipping : form.getElementsById("freeShipping").value
+		//Faltaria agregar sale como selector del form , en dicho caso , un precio de oferta.
 	};
 
-	let utr = "http://localhost:5000/posts/" + post_id;
+	let url = "http://localhost:5000/posts/" + post_id;
 
-	fetchData(
+	const response = fetchData(
 		url,
 		"PUT",
 		() => {
 			form.reset();
-			window.location.replace("../index.html");
+			window.location.replace("../index.html");   //TODO : cambiar redirect
 		},
 		post_data
 	);
+
 }
 
 function add_or_update() {
@@ -54,15 +58,16 @@ function add_or_update() {
 			"Editar producto existente";
 
 		// Este bloque trae el Id que consigno la DDB para referenciar y + , se genera el form a modificar.
-		// Faltaria qeu el id quede asociado con cada producto en el front ya que no son fomrularios.
 		let url = "http://localhost:5000/posts/<int:post_id>/" + post_id;
 		fetchData(url, "GET", (data) => {
+			form.getElementsById("post_id").value = data.id;    
             form.getElementsById("img").src=data.img;   //Falta agregar attr. img
 			form.getElementsById("title").value = data.title;
-			form.getElementsById("categoria").value = data.description;
+			form.getElementsById("category").value = data.description;
 			form.getElementsById("precio").value = data.price;
 			form.getElementsById("cantidad").value = data.quantity;
-			form.getElementsById("post_id").value = data.id;
+            form.getElementsById("freeShipping").value = data.shipping;
+            //form.getElementsById("offer").value = data.offer;
 		});
 
 		form.addEventListener("submit", update_post);

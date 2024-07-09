@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const confirmPassword = document.getElementById("confirmPassword");
 	const errorMessage = document.getElementById("errorMessage");
 
-	form.addEventListener("submit", (event) => {
+	form.addEventListener("submit", async (event) => {
 		if (password.value !== confirmPassword.value) {
 			event.preventDefault(); //Se cancela el submit del form.
 			errorMessage.classList.remove("hidden");
@@ -19,15 +19,27 @@ document.addEventListener("DOMContentLoaded", () => {
 				password: password.value,
 			};
 
-			fetchData(
-				"http://127.0.0.1:5000/register/",
-				"POST",
-				(data) => {
+			try{
+				const response = await fetch("http://127.0.0.1:5000/register/",{
+						method: 'POST',
+						headers:{
+							"Content-Type": "application/json",
+						},
+						body : JSON.stringify(user_info)
+					}
+				);
+	
+				if(response.status === 400){
+					alert("El nombre de  usuario ya existe")
+				}else if(response.ok){
 					form.reset();
-					window.location.replace("../index.html"); //A modificar a ventana de user
-				},
-				user_info
-			);
+					window.location.replace("../index.html");
+				}else{
+					alert("Ocurrio un error. Inténtalo nuevamente.")
+				}
+			}catch(error){
+				console.log("Ocurrió un error! " + error);
+			}	
 		}
 	});
 });

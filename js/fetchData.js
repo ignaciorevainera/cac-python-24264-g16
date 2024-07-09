@@ -5,7 +5,7 @@ function fetchData(url, method, callback, data = null) {
 			"Content-Type": "application/json",
 		},
 		body: data ? JSON.stringify(data) : null, // Si hay datos, los convierte a JSON y los incluye en el cuerpo
-	};
+	}; 
 
 	fetch(url, options)
 		.then((response) => response.json())
