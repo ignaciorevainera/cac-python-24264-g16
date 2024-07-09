@@ -16,9 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
 				product.title
 			}" />
                 <div class="product-card-body">
-                    <h5 class="product-card-title">${product.title}</h5>
-                    <h6 class="product-card-category">${product.category}</h6>
-                    
+                    <div>
+						<h5 class="product-card-title">${product.title}</h5>
+						<h6 class="product-card-category">${product.category}</h6>
+					</div>
+					<div>
+						<a href="/pages/add_update_product.html"
+							><i class="bx bxs-edit"></i
+						></a>
+					</div>
                 </div>
 				<div class="product-card-footer">
 					<div class="product-card-details">

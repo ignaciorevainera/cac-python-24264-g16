@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="/css/styles.css" />
 		<link rel="stylesheet" href="/css/signIn.css" />
 
-		<title>Agregar Producto</title>
+		<title>Agregar/Editar Producto</title>
 	</head>
 	<body>
 		<header>
@@ -104,14 +104,13 @@
 		</header>
 
 		<main>
-			<h2 class="section-title">Agregar nuevo producto</h2>
+			<h2 class="section-title">Agregar/Editar producto</h2>
 			<section class="section-form">
 				<form id="form" action="">
 					<label class="upper-label" for="title"
 						>Nombre<input id="title" type="text" required
 					/></label>
-					<select name="category" id="category">
-						<option value="1">Categoría</option>
+					<select name="category" id="category" required>
 						<option value="Plantas de Interior">
 							Plantas de Interior
 						</option>
@@ -139,8 +138,9 @@
 					<label class="upper-label" for="precio"
 						>Precio<input id="precio" type="number" required
 					/></label>
-					<label for="cantidad">
-						Cantidad<input id="cantidad" type="number" required />
+					<label for="stock" class="checkbox-label">
+						<input id="stock" type="checkbox" />¿Hay stock de este
+						producto?
 					</label>
 					<label for="freeShipping" class="checkbox-label">
 						<input id="freeShipping" type="checkbox" />Envío gratis
