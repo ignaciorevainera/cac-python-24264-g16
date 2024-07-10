@@ -5,15 +5,15 @@ const post_id = params.get("post_id");
 function add_new_post(event) {
 	let post_data = {
         //img : form.getElementById("img").src,
-		title: form.getElementById("title").value,
-		description: form.getElementById("category").value,
-		price: form.getElementById("precio").value,
-		quantity: form.getElementById("stock").value,
-        shipping : form.getElementById("freeShipping").value,
+		title: document.getElementById("title").value,
+		description: document.getElementById("category").value,
+		price: 	document.getElementById("precio").value,
+		quantity: document.getElementById("stock").value,
+        shipping : document.getElementById("freeShipping").value,
 		//Faltaria agregar sale como selector del form , en dicho caso , un precio de oferta.
 	};
 
-	let url = "http://localhost:5000/posts/";
+	let url = "http://localhost:5000/posts";
 
 	fetchData(
 		url,
@@ -29,11 +29,11 @@ function add_new_post(event) {
 function update_post(event) {
 	let post_data = {
         //img : form.getElementById("img").src,
-		title: form.getElementById("title").value,
-		description: form.getElementById("category").value,
-		price: form.getElementById("precio").value,
-		quantity: form.getElementById("stock").value,
-        shipping : form.getElementById("freeShipping").value
+		title: document.getElementById("title").value,
+		description: document.getElementById("category").value,
+		price: 	document.getElementById("precio").value,
+		quantity: document.getElementById("stock").value,
+        shipping : document.getElementById("freeShipping").value,
 		//Faltaria agregar sale como selector del form , en dicho caso , un precio de oferta.
 	};
 
@@ -70,15 +70,15 @@ function add_or_update() {
 		set_form_readOnly(true);
 
 		// Este bloque trae el Id que consigno la DDB para referenciar y + , se genera el form a modificar.
-		let url = "http://localhost:5000/posts/<int:post_id>/" + post_id;
+		let url = "http://localhost:5000/posts/<int:post_id>" + post_id;
 		fetchData(url, "GET", (data) => {
-			form.getElementById("post_id").value=data.id;
+			document.getElementById("post_id").value=data.id;
             //form.getElementById("img").src=data.img;   //Falta agregar attr. img
-			form.getElementById("title").value = data.title;
-			form.getElementById("category").value = data.description;
-			form.getElementById("precio").value = data.price;
-			form.getElementById("stock").value = data.quantity;
-            form.getElementById("freeShipping").value = data.shipping;
+			document.getElementById("title").value = data.title;
+			document.getElementById("category").value = data.description;
+			document.getElementById("precio").value = data.price;
+			document.getElementById("stock").value = data.quantity;
+            document.getElementById("freeShipping").value = data.shipping;
             //form.getElementById("offer").value = data.offer;
 
 			set_form_readOnly(false);
