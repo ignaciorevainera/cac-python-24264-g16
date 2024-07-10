@@ -10,7 +10,7 @@ function fetchData(url, method, callback, data = null) {
 	}; 
 
 	fetch(url, options)
-		.then((response) => response.json())
+		.then((response) => {response.json();console.log(response)})
 		.then((data) => {
 			callback(data);
 		})

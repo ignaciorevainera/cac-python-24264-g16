@@ -4,16 +4,16 @@ const post_id = params.get("post_id");
 
 function add_new_post(event) {
 	let post_data = {
-        img : form.getElementById("img").src,
+        //img : form.getElementById("img").src,
 		title: form.getElementById("title").value,
 		description: form.getElementById("category").value,
 		price: form.getElementById("precio").value,
-		quantity: form.getElementById("cantidad").value,
-        shipping : form.getElementById("freeShipping").value
+		quantity: form.getElementById("stock").value,
+        shipping : form.getElementById("freeShipping").value,
 		//Faltaria agregar sale como selector del form , en dicho caso , un precio de oferta.
 	};
 
-	let utr = "http://localhost:5000/posts/";
+	let url = "http://localhost:5000/posts/";
 
 	fetchData(
 		url,
@@ -28,18 +28,18 @@ function add_new_post(event) {
 
 function update_post(event) {
 	let post_data = {
-        img : form.getElementById("img").src,
+        //img : form.getElementById("img").src,
 		title: form.getElementById("title").value,
 		description: form.getElementById("category").value,
 		price: form.getElementById("precio").value,
-		quantity: form.getElementById("cantidad").value,
+		quantity: form.getElementById("stock").value,
         shipping : form.getElementById("freeShipping").value
 		//Faltaria agregar sale como selector del form , en dicho caso , un precio de oferta.
 	};
 
 	let url = "http://localhost:5000/posts/" + post_id;
 
-	const response = fetchData(
+	fetchData(
 		url,
 		"PUT",
 		() => {
@@ -51,23 +51,37 @@ function update_post(event) {
 
 }
 
+
+function set_form_readOnly(value) {
+    let form = document.querySelector("#form");
+    var elements = form.elements;
+    for (input of elements) { 
+        input.readOnly = value;
+    }
+}
+
+
 function add_or_update() {
 	//Si existe el producto lo modificamos. CC , producto nuevo.
 	if (post_id !== null) {
 		document.querySelector(".section-title").innerHTML =
 			"Editar producto existente";
 
+		set_form_readOnly(true);
+
 		// Este bloque trae el Id que consigno la DDB para referenciar y + , se genera el form a modificar.
 		let url = "http://localhost:5000/posts/<int:post_id>/" + post_id;
 		fetchData(url, "GET", (data) => {
-			form.getElementById("post_id").value = data.id;    
-            form.getElementById("img").src=data.img;   //Falta agregar attr. img
+			form.getElementById("post_id").value=data.id;
+            //form.getElementById("img").src=data.img;   //Falta agregar attr. img
 			form.getElementById("title").value = data.title;
 			form.getElementById("category").value = data.description;
 			form.getElementById("precio").value = data.price;
-			form.getElementById("cantidad").value = data.quantity;
+			form.getElementById("stock").value = data.quantity;
             form.getElementById("freeShipping").value = data.shipping;
             //form.getElementById("offer").value = data.offer;
+
+			set_form_readOnly(false);
 		});
 		form.addEventListener("submit", update_post);
 	} else {

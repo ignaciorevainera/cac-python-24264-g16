@@ -1,17 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-	const form = document.getElementById("form");
-	const password = document.getElementById("password");
-	const errorMessage=document.getElementById("errorMessage");
+//document.addEventListener("DOMContentLoaded", () => {
+	var form = document.getElementById("form");
+	let password = document.getElementById("password");
+	let errorMessage=document.getElementById("errorMessage");
 	errorMessage.classList.add("hidden");
 
-	form.addEventListener("submit", async (event) => {
+	form.addEventListener("submit",async (event) => {
+		event.preventDefault();
+
 		let user_info = {
-			username: form.getElementById("username").value,
+			username: document.getElementById("username").value,
 			password: password.value,
 		};
 
+		let url ="http://127.0.0.1:5000/login";
+
 		try{
-			const response = await fetch( "http://127.0.0.1:5000/login/",{
+			const response = await fetch( url,{
 					method: 'POST',
 					headers:{
 						"Content-Type": "application/json",
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					body : JSON.stringify(user_info)
 				}
 			);
-
+			
 			if(response.status === 401){
 				errorMessage.classList.remove("hidden")
 			}else if(response.ok){
@@ -33,4 +37,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 	});
-});
+
+//});
